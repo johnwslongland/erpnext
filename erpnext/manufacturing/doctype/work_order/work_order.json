@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_bulk_edit": 1,
  "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2025-04-09 12:09:40.634472",
@@ -30,6 +29,7 @@
   "settings_section",
   "allow_alternative_item",
   "use_multi_level_bom",
+  "color",
   "column_break_17",
   "skip_transfer",
   "from_wip_warehouse",
@@ -45,7 +45,6 @@
   "has_batch_no",
   "column_break_18",
   "batch_size",
-  "required_items_section",
   "materials_and_operations_tab",
   "operations_section",
   "transfer_material_against",
@@ -274,11 +273,6 @@
    "label": "Scrap Warehouse",
    "link_filters": "[[\"Warehouse\",\"disabled\",\"=\",0],[\"Warehouse\",\"is_group\",\"=\",0]]",
    "options": "Warehouse"
-  },
-  {
-   "fieldname": "required_items_section",
-   "fieldtype": "Section Break",
-   "label": "Required Items"
   },
   {
    "fieldname": "required_items",
@@ -600,6 +594,11 @@
    "label": "Disassembled Qty",
    "no_copy": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
   }
  ],
  "icon": "fa fa-cogs",
@@ -607,7 +606,7 @@
  "image_field": "image",
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-19 12:20:38.102403",
+ "modified": "2026-06-07 12:33:14.049792",
  "modified_by": "Administrator",
  "module": "Manufacturing",
  "name": "Work Order",
@@ -637,6 +636,7 @@
    "role": "Stock User"
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "ASC",
  "states": [],
